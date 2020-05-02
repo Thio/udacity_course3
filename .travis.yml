@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker-compose -f udacity-c3-deployment/docker-compose-build.yaml build --parallel
+  - docker-compose -f udacity-c3-deployment\docker\docker-compose-build.yaml build --parallel
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
