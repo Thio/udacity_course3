@@ -19,7 +19,7 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  # - docker push "$DOCKER_USERNAME"/frontend
-  # - docker push "$DOCKER_USERNAME"/backend-feed
-  # - docker push "$DOCKER_USERNAME"/backend-user
-  # - docker push "$DOCKER_USERNAME"/reverseproxy
+  - docker push "$DOCKER_USERNAME"/frontend:prod
+  - docker push "$DOCKER_USERNAME"/backend-feed:prod
+  - docker push "$DOCKER_USERNAME"/backend-user:prod
+  - docker push "$DOCKER_USERNAME"/reverseproxy:prod
