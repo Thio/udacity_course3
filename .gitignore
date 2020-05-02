@@ -43,7 +43,6 @@ venv/
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-
 # Temporary
 course-04/
 course-02/exercises/udacity-c2-basic-server
